@@ -38,7 +38,7 @@ export const CartProvider = ({ children }) => {
 
       const response = await cartService.getCart();
 
-      const items = response.data || [];
+      const items = response.data.data || [];
 
       setCartItems(items);
 
