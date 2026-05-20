@@ -15,7 +15,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://pageturner-bookstore.vercel.app/",
+    origin: "https://pageturner-bookstore.vercel.app",
     credentials: true,
   }),
 );
