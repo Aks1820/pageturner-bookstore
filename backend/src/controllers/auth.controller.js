@@ -3,7 +3,8 @@ const authService = require("../services/auth.service");
 // Cookie settings
 const cookieOptions = {
   httpOnly: true,
-  secure: false, // true in production
+  secure: true,
+  sameSite: "none",
   maxAge: 15 * 24 * 60 * 60 * 1000,
 };
 
